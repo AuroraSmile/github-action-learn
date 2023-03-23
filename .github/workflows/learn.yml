@@ -29,7 +29,6 @@ jobs:
           myHexNumber: ${{ 0xff }}
           myExponentialNumber: ${{ -2.99e-2 }}
           myString: Mona the Octocat
-          myStringInBraces: ${{ 'It''s open source!' }}
 	        myUseFuntion: ${{ contains('Hello world', 'llo') }}
       - name: test expression
         run: $myBoolean
