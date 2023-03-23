@@ -20,8 +20,7 @@ jobs:
   using-text-context:
     runs-on: ubuntu-latest
     steps:
-      - name: set env
-        env:
+      - env:
           MY_PORT: 3301
           MY_NAME: Aurora
       - run: echo "${{env.MY_PORT}}----${{env.MY_NAME}}"
