@@ -22,8 +22,9 @@ jobs:
     env:
       MY_PORT: 3301
       MY_NAME: Aurora
+      MY_DATE: $(date +'%Y-%m-%d-%H:%m:%S')
     steps:
       - run: echo "${{env.MY_PORT}}----${{env.MY_NAME}}"
       - run: echo "${{github.ref}}"
       - run: echo "$MY_PORT"
-      - run: echo "$(date +'%Y-%m-%d-%H:%m:%S')"
+      - run: echo "$MY_DATE"
