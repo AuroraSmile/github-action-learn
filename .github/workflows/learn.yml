@@ -28,7 +28,6 @@ jobs:
           myFloatNumber: ${{ -9.2 }}
           myHexNumber: ${{ 0xff }}
           myExponentialNumber: ${{ -2.99e-2 }}
-          myString: Mona the Octocat
 	        myUseFuntion: ${{ contains('Hello world', 'llo') }}
       - name: test expression
         run: $myBoolean
