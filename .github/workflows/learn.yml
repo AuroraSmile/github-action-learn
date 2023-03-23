@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: set env
         env:
-          myBoolean: ${{ false }}
+          #myBoolean: ${{ false }}
 	        myNumber: ${{ 711 }}
 	        myString: hello
 	        myUseFuntion: ${{ contains('Hello world', 'llo') }}
