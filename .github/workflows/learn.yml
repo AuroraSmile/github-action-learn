@@ -1,0 +1,8 @@
+#工作流名称
+name: learn-workflows
+on: [push]
+jobs:
+  learn:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello"
