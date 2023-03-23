@@ -20,8 +20,9 @@ jobs:
   using-text-context:
     runs-on: ubuntu-latest
     steps:
-      - env:
+      - name: run env
+        env:
           MY_PORT: 3301
           MY_NAME: Aurora
-      - run: echo "${{env.MY_PORT}}----${{env.MY_NAME}}"
+         run: echo "${{env.MY_PORT}}----${{env.MY_NAME}}"
       - run: echo "${{github.ref}}"
