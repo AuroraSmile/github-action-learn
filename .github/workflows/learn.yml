@@ -22,9 +22,10 @@ jobs:
     env:
       MY_PORT: 3301
       MY_NAME: Aurora
-      MY_DATE: ${{(date +'%Y-%m-%d-%H:%m:%S')}}
+      MY_DATE: sss
     steps:
       - run: echo "${{env.MY_PORT}}----${{env.MY_NAME}}"
       - run: echo "${{github.ref}}"
       - run: echo "$MY_PORT"
+      - run: echo "$MY_DATE=$(date +'%Y-%m-%d-%H:%m:%S')"
       - run: echo "$MY_DATE"
