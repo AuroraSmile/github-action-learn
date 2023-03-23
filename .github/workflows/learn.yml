@@ -17,19 +17,8 @@ jobs:
         env:
           MY_PORT: 1234
         run: node hello.js
-  using-expression: 
+  using-text-context:
     runs-on: ubuntu-latest
     steps:
-      - name: set env
-        env:
-          myNull: ${{ null }}
-          myBoolean: ${{ false }}
-          myIntegerNumber: ${{ 711 }}
-          myFloatNumber: ${{ -9.2 }}
-          myHexNumber: ${{ 0xff }}
-          myExponentialNumber: ${{ -2.99e-2 }}
-	        myUseFuntion: ${{ contains('Hello world', 'llo') }}
-      - name: test expression
-        run: $myBoolean
-        run: $myNumber
-        run: $myUseFuntion
+      -run: echo ${{env}}
+      -run: echo ${{github.ref}}
