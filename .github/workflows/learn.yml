@@ -25,3 +25,4 @@ jobs:
     steps:
       - run: echo "${{env.MY_PORT}}----${{env.MY_NAME}}"
       - run: echo "${{github.ref}}"
+      - run: echo "$MY_PORT"
