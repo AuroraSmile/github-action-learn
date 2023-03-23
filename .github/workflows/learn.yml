@@ -20,7 +20,8 @@ jobs:
   using-expression: 
     runs-on: ubuntu-latest
     steps:
-      - env:
+      - name: set env
+        env:
           myBoolean: ${{ false }}
 	        myNumber: ${{ 711 }}
 	        myString: hello
