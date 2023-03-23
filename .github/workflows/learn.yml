@@ -20,5 +20,5 @@ jobs:
   using-text-context:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{env}}
-      - run: echo ${{github.ref}}
+      - run: echo "${{env}}"
+      - run: echo "${{github.ref}}"
