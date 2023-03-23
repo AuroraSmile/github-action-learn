@@ -22,9 +22,14 @@ jobs:
     steps:
       - name: set env
         env:
-          #myBoolean: ${{ false }}
-	        myNumber: ${{ 711 }}
-	        myString: hello
+          myNull: ${{ null }}
+          myBoolean: ${{ false }}
+          myIntegerNumber: ${{ 711 }}
+          myFloatNumber: ${{ -9.2 }}
+          myHexNumber: ${{ 0xff }}
+          myExponentialNumber: ${{ -2.99e-2 }}
+          myString: Mona the Octocat
+          myStringInBraces: ${{ 'It''s open source!' }}
 	        myUseFuntion: ${{ contains('Hello world', 'llo') }}
       - name: test expression
         run: $myBoolean
