@@ -21,10 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - env:
-          myBoolean: ${{false}}
-	        myNumber: ${{711}}
+          myBoolean: ${{ false }}
+	        myNumber: ${{ 711 }}
 	        myString: hello
-	        myUseFuntion: ${{contains('Hello world', 'llo')}}
+	        myUseFuntion: ${{ contains('Hello world', 'llo') }}
       - name: test expression
         run: $myBoolean
         run: $myNumber
