@@ -17,3 +17,15 @@ jobs:
         env:
           MY_PORT: 1234
         run: node hello.js
+  using-expression: 
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          myBoolean: ${{false}}
+	        myNumber: ${{711}}
+	        myString: hello
+	        myUseFuntion: ${{contains('Hello world', 'llo')}}
+      - name: test expression
+        run: $myBoolean
+        run: $myNumber
+        run: $myUseFuntion
