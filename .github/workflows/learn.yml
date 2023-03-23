@@ -3,7 +3,7 @@ name: learn-workflows
 on: [push]
 jobs:
   #在workflow中使用脚本和环境变量
-  using script and env variables:
+  using-script-and-env-variables:
     runs-on: ubuntu-latest
     steps:
       - run: echo "hello"
